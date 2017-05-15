@@ -53,7 +53,7 @@
   },
   "scripts": {
     "build": "babel ./src --out-dir ./lib --ignore __tests__",
-    "prepublish": "npm run build",
+    "postinstall": "npm run build",
     "demo": "gulp demo",
     "lint": "eslint src/",
     "test": "jest --verbose"
